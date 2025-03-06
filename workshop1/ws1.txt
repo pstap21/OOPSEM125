@@ -1,0 +1,19 @@
+ws1.txt
+
+
+
+what is the purpose of the log message you supply to your git commit
+
+to advise of the changes to the file upload
+
+what do you think makes a good commit message
+
+details about what changes were made and why
+
+when and how often should i be commiting my work?
+
+after any large changes, or after a session of coding
+
+True or Flase, you should commit all files to GIT
+
+True
