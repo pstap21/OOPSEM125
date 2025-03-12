@@ -1,4 +1,4 @@
-
+#include <iostream>
 
 int array_sum(int array [], int n){
     int array_sum = 0;
@@ -12,3 +12,4 @@ int array_sum(int array [], int n){
         sum += array [i]; //add each element of the array to sum
     }
 }
+
