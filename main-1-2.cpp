@@ -1,12 +1,26 @@
 #include <iostream>
+#include <stdio.h>
+#include "function-1-2.cpp"
 
-double array_mean( int array [], int n);
 
-int main(){
-    int array1 [5] = { 1, 2, 3, 4, 5};
-    std::cout << "The average of elements in the array is: " <<array_mean(array1, 5) << std::endl;
+int main() {
+
+    int matrix [10][10] = {
+        {1, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 1, 0, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 1, 0, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 1, 0, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 1, 0},
+        {0, 0, 0, 0, 0, 0, 0, 0, 0, 1}
+    };
+
+    int result = is_identity(matrix);
+    printf("Result: %d\n", result);
 
     return 0;
-
     
 }

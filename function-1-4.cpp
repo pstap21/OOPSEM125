@@ -1,19 +1,22 @@
-#include <iostream>
+# include <iostream>
+using namespace std;
 
-int sum_two_arrays(int array[], int secondarray [], int n){
 
-    if (n < 1)
-    return 0;
+void print_scaled ( int array[3][3], int scale){
 
-    int sum = 0;
-    for (int i = 0; i < n; i++){
-        sum += array[i] + secondarray[i];
+//looping through each row/column
+for ( int i = 0; i < 3; i++) {
+    for ( int j = 0; j < 3; j ++) {
+
+        cout << array[i][j] * scale;
+
+        if (j < 2) {
+            cout << " ";
+        }
+
 
     }
-
-    return sum;
+    cout << endl; //print a new line after each row
     
 }
-
-
-
+}

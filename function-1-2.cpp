@@ -1,20 +1,21 @@
 #include <iostream>
+#include <stdio.h>
 
-double array_mean( int array [], int n){
+int is_identity( int array[10][10]){
 
+for (int i = 0; i < 10; i++){
+    for ( int j = 0; j < 10; j++) {
 
-    if (n< 1){
-    return 0.0;
+        if ( i == j){
+            if (array[i][j] != 1) {
+                return 0; //not an idenitity matrix
+            }
+        } else {
+            if (array[i][j] != 0) {
+                return 0; //not an identitiy matrix
+            }
+        }
+        }
     }
-
-    int sum = 0;
-    for ( int i = 0; i < n; i++) {
-        sum += array [i];
-    }
-
-    return static_cast<double> (sum) / n;
- }    
-
-
-
-
+    return 1;
+}

@@ -1,14 +1,18 @@
 #include <iostream>
+#include "function-1-3.cpp"
 
-//function
+int main() {
+    
 
-int num_count (int array[], int n, int number);
-
-int main (){
-    int array1[5] = {1, 2, 3, 4, 5};
-
-    std::cout << "The number of elements equal to 3 in the array1 is: " << num_count (array1, 5, 3) << std::endl;
-
+    int matrix[4][4] = {
+        {1, 0, 0, 0},
+        {0, 1, 0, 0},
+        {0, 0, 1, 0},
+        {0, 0, 0, 1}
+    };
+    
+    
+    count_digits(matrix);
+    
     return 0;
-
 }

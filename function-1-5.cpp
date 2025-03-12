@@ -1,20 +1,20 @@
-//count the number of even numbers between 1 and the number we supply
 #include <iostream>
+using namespace std;
 
-int count_evens(int number){
 
-    if (number < 1){
-    return 0;
+void print_summed( int array1[3][3], int array2[3][3]){
 
+for (int i = 0; i < 3; i++){
+    for (int j = 0; j <3; j ++) {
+
+        cout << array1[i][j] + array2[i][j];
+
+        if (j < 2){
+            cout << " ";
+        }
+            }
+
+            cout << endl;
+            
 }
-
-int count = 0;
-for ( int i = 1; i <= number; i++) {
-    if ( i % 2 == 0) { // checks to see if number is even
-        count++;
-
-    }
-}
-return count;
-
 }

@@ -1,21 +1,29 @@
 #include <iostream>
+using namespace std;
 
 
-//function that returns the number of elements in an array that are equak to the given paramater
-int num_count (int array  [], int n, int number){
+void count_digits( int array [4][4]){
 
-if (n < 1){
-return 0;
+int digicount[10] = {0};
 
-}
 
-int count = 0;
-for (int i =0; i < n ; i++){
-    if (array[i] == number) {
-        count++;
+for (int i = 0; i < 4; i ++){
+    for ( int j = 0; j < 4; j++) {
+        if (array[i][j] >=0 && array[i][j] <= 9) {
+            digicount[array[i][j]]++;
 
+        }
     }
 }
-return count;
+for (int i = 0; i < 10; i++) {
+    cout << i << ":" << digicount[i];
+    if (i < 9) {
+        cout << ";";
+
+    }
+
+}
+
+cout <<endl;
 
 }

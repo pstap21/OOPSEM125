@@ -1,10 +1,20 @@
+#include <iostream>
+#include "function-1-1.cpp"
 
-//declar function
-int array_sum(int array [], int n);
+using namespace std;
 
 int main() {
 
-    int array[5] = {1, 2, 3, 4, 5};
-    std::cout << "The sum of the elements in the array is: " << array_sum(array, 5) <<std::endl;
+    int matrix[4][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12},
+        {13, 14, 15, 16}
+    };
 
+    int result = sum_diagonal(matrix);
+
+    cout << " The sum of the diagonal elements is: " << result << endl;
+
+    return 0;
 }
